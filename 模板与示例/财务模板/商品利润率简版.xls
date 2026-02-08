@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Styles>
+    <Style ss:ID="Header">
+      <Font ss:Bold="1"/>
+      <Interior ss:Color="#D9D9D9" ss:Pattern="Solid"/>
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+    </Style>
+    <Style ss:ID="Default"/>
+    <Style ss:ID="Number">
+      <NumberFormat ss:Format="General"/>
+    </Style>
+    <Style ss:ID="Percent">
+      <NumberFormat ss:Format="0.00%"/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="商品利润率简版">
+    <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="5" x:FullColumns="1" x:FullRows="1">
+      <Column ss:AutoFitWidth="1" ss:Width="90"/>
+      <Column ss:AutoFitWidth="1" ss:Width="80"/>
+      <Column ss:AutoFitWidth="1" ss:Width="80"/>
+      <Column ss:AutoFitWidth="1" ss:Width="70"/>
+      <Column ss:AutoFitWidth="1" ss:Width="90"/>
+      <Column ss:AutoFitWidth="1" ss:Width="110"/>
+      <Column ss:AutoFitWidth="1" ss:Width="120"/>
+      <Column ss:AutoFitWidth="1" ss:Width="80"/>
+      <Column ss:AutoFitWidth="1" ss:Width="80"/>
+      <Column ss:AutoFitWidth="1" ss:Width="80"/>
+      <Column ss:AutoFitWidth="1" ss:Width="120"/>
+      <Row>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">日期</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">商品名称</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">SKU</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">售卖方式</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">每份重量(g)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">进货价(元/500g)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">每份进货成本(元)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">售价(元)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">利润(元)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">利润率</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">备注</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">2026-02-08</Data></Cell>
+        <Cell><Data ss:Type="String">小笼包</Data></Cell>
+        <Cell><Data ss:Type="String">XLB-120</Data></Cell>
+        <Cell><Data ss:Type="String">每份</Data></Cell>
+        <Cell><Data ss:Type="Number">120</Data></Cell>
+        <Cell><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:Formula="=F2*E2/500"><Data ss:Type="Number">0</Data></Cell>
+        <Cell><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:Formula="=H2-G2"><Data ss:Type="Number">0</Data></Cell>
+        <Cell ss:Formula="=IFERROR(I2/H2,&quot;&quot;)"><Data ss:Type="String"></Data></Cell>
+        <Cell><Data ss:Type="String">每份120g</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">2026-02-08</Data></Cell>
+        <Cell><Data ss:Type="String">蒸饺</Data></Cell>
+        <Cell><Data ss:Type="String">ZJ-220</Data></Cell>
+        <Cell><Data ss:Type="String">每份</Data></Cell>
+        <Cell><Data ss:Type="Number">220</Data></Cell>
+        <Cell><Data ss:Type="Number">11.5</Data></Cell>
+        <Cell ss:Formula="=F3*E3/500"><Data ss:Type="Number">0</Data></Cell>
+        <Cell><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:Formula="=H3-G3"><Data ss:Type="Number">0</Data></Cell>
+        <Cell ss:Formula="=IFERROR(I3/H3,&quot;&quot;)"><Data ss:Type="String"></Data></Cell>
+        <Cell><Data ss:Type="String">每份220g</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">2026-02-08</Data></Cell>
+        <Cell><Data ss:Type="String">肉丸</Data></Cell>
+        <Cell><Data ss:Type="String">RM-120</Data></Cell>
+        <Cell><Data ss:Type="String">每份</Data></Cell>
+        <Cell><Data ss:Type="Number">120</Data></Cell>
+        <Cell><Data ss:Type="Number">9.5</Data></Cell>
+        <Cell ss:Formula="=F4*E4/500"><Data ss:Type="Number">0</Data></Cell>
+        <Cell><Data ss:Type="Number">16</Data></Cell>
+        <Cell ss:Formula="=H4-G4"><Data ss:Type="Number">0</Data></Cell>
+        <Cell ss:Formula="=IFERROR(I4/H4,&quot;&quot;)"><Data ss:Type="String"></Data></Cell>
+        <Cell><Data ss:Type="String">每份120g</Data></Cell>
+      </Row>
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Selected/>
+      <FreezePanes/>
+      <FrozenNoSplit/>
+      <SplitHorizontal>1</SplitHorizontal>
+      <TopRowBottomPane>1</TopRowBottomPane>
+      <ActivePane>2</ActivePane>
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>
